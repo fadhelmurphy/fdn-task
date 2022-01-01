@@ -194,12 +194,12 @@ export default function Home() {
           </div>
           <div className="row">
             <div className="col-12 col-md-8">
-                <Image className="w-100" src="/assets/images/video-1.png"/>
+                <img className="w-100" src="/assets/images/video-1.png"/>
               </div>
             <div className="col-12 col-md-4">
               <div className="d-flex flex-column">
-                <Image className="mb-3 h-100" src="/assets/images/video-2.png"/>
-                <Image className="h-100" src="/assets/images/video-3.png"/>
+                <img className="mb-3 h-100" src="/assets/images/video-2.png"/>
+                <img className="h-100" src="/assets/images/video-3.png"/>
               </div>
               </div>
           </div>
@@ -237,42 +237,42 @@ export default function Home() {
           </div>
           <div className="d-flex flex-column flex-md-row my-5 justify-content-center">
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="80"
                 className="img-fluid"
                 src="/assets/images/nivea.png"
               />
             </Col>
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="150"
                 className="img-fluid"
                 src="/assets/images/the-ordinary.png"
               />
             </Col>
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="80"
                 className="img-fluid"
                 src="/assets/images/the-body-shop.png"
               />
             </Col>
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="150"
                 className="img-fluid"
                 src="/assets/images/sk2.jpg"
               />
             </Col>
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="150"
                 className="img-fluid"
                 src="/assets/images/maybeline.png"
               />
             </Col>
             <Col xs="12" md="2" className="d-flex align-items-center justify-content-center mb-3">
-              <Image
+              <img
                 width="150"
                 className="img-fluid"
                 src="/assets/images/innisfree.jpg"
