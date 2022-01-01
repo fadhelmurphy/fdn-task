@@ -64,7 +64,7 @@ export const ReviewCards = ({ data = null }) => {
   }) => (
     <Card className="p-3 me-5" style={{ borderRadius: "10px" }}>
       <div className="d-flex align-items-center">
-        <Image className="me-3" width="80" src={product.image} />
+        <img className="me-3" width="80" src={product.image} />
         <div className="d-flex flex-column">
           <Card.Title className="fw-bold text-dark text-uppercase">
             {product.name}
@@ -93,7 +93,7 @@ export const ReviewCards = ({ data = null }) => {
             className="d-flex flex-column justify-content-center"
             style={{ marginBottom: "-100px" }}
           >
-            <Image
+            <img
               className="mx-auto"
               width="45"
               src="/assets/images/user.png"

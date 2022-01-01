@@ -2,7 +2,6 @@ import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import { Row, Col, Container,Card } from "react-bootstrap";
 import { AppStoreIcon, PlayStoreIcon } from "../../components/icons";
-import Image from 'next/image'
 
 export const LandingFooter = () => {
   return (
