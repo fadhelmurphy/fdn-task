@@ -29,7 +29,7 @@ export const ArticleCards = ({data=null}) => {
       <Card.Img variant="top" className="img-fluid w-100" 
       style={{maxHeight:'200px',borderRadius:"10px"}} 
       src={image} />
-         {((idx%2)==0)&&<p class="article-text-sponsored fw-bolder px-2 py-1">Sponsored</p>}
+         {((idx%2)==0)&&<p className="article-text-sponsored fw-bolder px-2 py-1">Sponsored</p>}
           <Card.Text className="py-3">
               <h4 className="fw-bolder">{title}</h4>
               <p><span className="fw-normal">{author}</span>
