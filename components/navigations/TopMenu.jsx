@@ -10,7 +10,6 @@ import {
   Button
 } from "react-bootstrap";
 import { SearchIcon,LoginIcon } from "../icons";
-import Image from 'next/image'
 
 export const TopMenu = () => {
   return (
@@ -22,7 +21,7 @@ export const TopMenu = () => {
                 aria-controls="offcanvasNavbar"
                 className="me-3 border-0"
               />
-              <Image
+              <img
                 className="me-3" width="150" src="/assets/images/fdn.jpg" /></div>
               <InputGroup className="w-100 my-2 me-5" size="sm" >
                 <InputGroup.Text

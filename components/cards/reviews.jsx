@@ -3,7 +3,6 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 import Slider from "react-slick";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
-import Image from 'next/image'
 export const ReviewCards = ({ data = null }) => {
   const [rating, setRating] = useState(4.1); // initial rating value
   const maxrating = 5;
