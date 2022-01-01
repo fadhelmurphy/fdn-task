@@ -3,6 +3,7 @@ import { Card, Col, Row, Button } from "react-bootstrap";
 import { Rating } from "react-simple-star-rating";
 import Slider from "react-slick";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import Image from 'next/image'
 export const ReviewCards = ({ data = null }) => {
   const [rating, setRating] = useState(4.1); // initial rating value
   const maxrating = 5;
@@ -64,7 +65,7 @@ export const ReviewCards = ({ data = null }) => {
   }) => (
     <Card className="p-3 me-5" style={{ borderRadius: "10px" }}>
       <div className="d-flex align-items-center">
-        <img className="me-3" width="80" src={product.image} />
+        <Image className="me-3" width="80" src={product.image} />
         <div className="d-flex flex-column">
           <Card.Title className="fw-bold text-dark text-uppercase">
             {product.name}
@@ -93,7 +94,7 @@ export const ReviewCards = ({ data = null }) => {
             className="d-flex flex-column justify-content-center"
             style={{ marginBottom: "-100px" }}
           >
-            <img
+            <Image
               className="mx-auto"
               width="45"
               src="/assets/images/user.png"
@@ -125,8 +126,8 @@ export const ReviewCards = ({ data = null }) => {
         ref={(c) => (sliderOnClick = c)}
         {...settings}
       >
-        {data.map((el) => (
-          <div>
+        {data.map((el,idx) => (
+          <div key={idx}>
             <RevCard {...el}/>
           </div>
         ))}

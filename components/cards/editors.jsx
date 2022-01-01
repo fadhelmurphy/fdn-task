@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, Row } from "react-bootstrap";
 import { Rating } from 'react-simple-star-rating'
+import Image from 'next/image'
 export const EditorCards = ({data=[]}) => {
     const [rating, setRating] = useState(4.1) // initial rating value
     const maxrating = 5
@@ -12,11 +13,11 @@ export const EditorCards = ({data=[]}) => {
   return (
     <>
     <Row className="py-5">
-    {data.map(({editor,role,product})=>(
-    <Card className="mx-auto col-8 col-md-2 my-5 my-md-0 me-md-3" style={{borderRadius:"10px" }}> 
+    {data.map(({editor,role,product},idx)=>(
+    <Card key={idx} className="mx-auto col-8 col-md-2 my-5 my-md-0 me-md-3" style={{borderRadius:"10px" }}> 
     <div className="d-flex" style={{marginTop:'-60px'}}>
               
-    <img
+    <Image
           className="me-3" width="65" src="/assets/images/user.png" 
           style={{
               borderRadius:"50%"

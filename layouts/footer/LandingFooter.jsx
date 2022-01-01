@@ -1,7 +1,7 @@
 import styles from "../../styles/Home.module.css";
-import Image from "next/image";
 import { Row, Col, Container,Card } from "react-bootstrap";
 import { AppStoreIcon, PlayStoreIcon } from "../../components/icons";
+import Image from 'next/image'
 
 export const LandingFooter = () => {
   return (
@@ -36,8 +36,8 @@ export const LandingFooter = () => {
                 <div class="d-flex flex-column bd-highlight mb-3">
                   <p className="fw-bold">Download Our Mobile App</p>
                 <div class="d-flex flex-column flex-md-row bd-highlight mb-3">
-                  <p className="me-5"><img width="150" src="/assets/images/app-store.png"/></p>
-                  <p><img width="150" src="/assets/images/playstore.png"/></p>
+                  <p className="me-5"><Image width="150" src="/assets/images/app-store.png"/></p>
+                  <p><Image width="150" src="/assets/images/playstore.png"/></p>
                 </div>
                 </div>
           </Col>
@@ -46,7 +46,7 @@ export const LandingFooter = () => {
           <Col xs="12" md="8">
                 <div class="d-flex flex-column bd-highlight mb-3">
                 
-              <img
+              <Image
                 className="me-3" width="150" src="/assets/images/fdn.jpg" />
                   <p>Copyright 2015-2017 Female Daily Network - All rights reserved</p>
                 </div>
@@ -54,28 +54,28 @@ export const LandingFooter = () => {
           <Col xs="12" md="4" className="align-self-center">
           <div className="d-flex my-5 justify-content-start">
             <Col xs="2" className="d-flex align-items-center justify-content-center me-2">
-              <img
+              <Image
                 width="35"
                 className="img-fluid"
                 src="/assets/images/facebook.png"
               />
             </Col>
             <Col xs="2" className="d-flex align-items-center justify-content-center me-2">
-              <img
+              <Image
                 width="35"
                 className="img-fluid"
                 src="/assets/images/twitter.png"
               />
             </Col>
             <Col xs="2" className="d-flex align-items-center justify-content-center me-2">
-              <img
+              <Image
                 width="35"
                 className="img-fluid"
                 src="/assets/images/instagram.png"
               />
             </Col>
             <Col xs="2" className="d-flex align-items-center justify-content-center me-2">
-              <img
+              <Image
                 width="35"
                 className="img-fluid"
                 src="/assets/images/youtube.png"

@@ -13,9 +13,10 @@ export const PopularGroups = ({data=Array.from(Array(4).keys())}) => {
   };
   return (
       <Row className="justify-content-center">
-          {data.map(_=>(
+          {data.map((_,idx)=>(
               
       <Card
+      key={idx}
       className="popular mx-auto mx-md-0 col-8 col-md-3 p-3 shadow-sm border-0 me-md-4 mb-3"
       style={{ borderRadius: "10px" }}
     >

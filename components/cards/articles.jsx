@@ -4,9 +4,9 @@ import { Rating } from 'react-simple-star-rating'
 export const ArticleCards = ({data=null}) => {
   return (
     <Row>
-      {data.map(({title,image,author})=>(
+      {data.map(({title,image,author},idx)=>(
         
-    <Card className="col-12 col-md-4 border-0" style={{borderRadius:"10px" }}> 
+    <Card key={idx} className="col-12 col-md-4 border-0" style={{borderRadius:"10px" }}> 
       <Card.Body className="p-0">
       <Card.Img variant="top" className="img-fluid w-100" 
       style={{maxHeight:'200px',borderRadius:"10px"}} 
