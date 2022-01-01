@@ -42,7 +42,7 @@ export const TopMenu = () => {
                 size="lg"
                 active
                 className="col-12 col-md-2 text-uppercase py-3 py-md-0 px-md-5 border-0 m-0 d-flex align-items-center"
-                style={{ borderRadius: "0", fontSize:'15px',backgroundColor:'#dc294f' }}
+                style={{ borderRadius: "0", fontSize:'14px',backgroundColor:'#dc294f' }}
               >
                 <LoginIcon width="20" className="me-3"/>Login / SignUp
               </Button>

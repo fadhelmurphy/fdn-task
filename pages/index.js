@@ -78,7 +78,9 @@ export default function Home() {
           <Container>
             {/* Matches Product Section */}
             <Row>
-              <Col xs="12" md="3" className="p-3 align-self-center">
+              <Col xs="12" md="1">
+              </Col>
+              <Col xs="12" md="4" className="p-5 align-self-center">
                 <h3 className="fw-bold">
                   Looking for products that are just simply perfect for you?
                 </h3>
@@ -90,7 +92,7 @@ export default function Home() {
                 <Button className="ms-md-auto text-capitalize px-4 py-2" variant="danger">See My Matches!</Button>
                 </span>
               </Col>
-              <Col xs="12" md="9">
+              <Col xs="12" md="7">
                 <ProductCards />
               </Col>
             </Row>
