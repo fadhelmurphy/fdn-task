@@ -48,7 +48,33 @@ export const ReviewCards = ({ data = null }) => {
           onClick={() => sliderOnClick.slickNext()}
         />
       </div>
-    )
+    ),
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
   };
   const RevCard = ({
     user = "atikaxr",
@@ -62,7 +88,7 @@ export const ReviewCards = ({ data = null }) => {
     star = 3,
     comment = "liptint pertamaku haha dengan harga yang affordable udah bisa membuat korean look di wajahku (ga cocok si haha), cairrr, mudah kering jadi"
   }) => (
-    <Card className="p-3 me-5" style={{ borderRadius: "10px" }}>
+    <Card className="p-3 me-md-5" style={{ borderRadius: "10px" }}>
       <div className="d-flex align-items-center">
         <img className="me-3" width="80" src={product.image} />
         <div className="d-flex flex-column">
