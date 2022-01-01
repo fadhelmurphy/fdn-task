@@ -88,7 +88,7 @@ export const LandingFooter = () => {
           className="bottomFrame mt-5 mx-auto"
           style={{ borderRadius: "0" }}
         >
-          <h1 className="text-center my-auto">Footer 970x250</h1>
+          <h1 className="text-center my-auto">Bottom Frame 970x50</h1>
         </Card>
       </Container>
     </footer>

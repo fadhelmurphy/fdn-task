@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link"
-import { Card, Row, Col, Container } from "react-bootstrap";
+import { Card, Row, Col, Container,Button } from "react-bootstrap";
 import {
   EditorCards,
   ProductCards,
@@ -68,11 +68,16 @@ export default function Home() {
         </Container>
         <div
           className="mt-5 py-3"
-          style={{ minHeight: "40vh", background: "#fddae0" }}
+          style={{ minHeight: "40vh", 
+          backgroundColor: "#fddae0",
+          backgroundImage:"url('/assets/images/girl.png')",
+          backgroundRepeat:"no-repeat",
+          backgroundPosition:"bottom left"
+        }}
         >
           <Container>
             {/* Matches Product Section */}
-            <Row className="ps-5">
+            <Row>
               <Col xs="12" md="3" className="p-3 align-self-center">
                 <h3 className="fw-bold">
                   Looking for products that are just simply perfect for you?
@@ -81,6 +86,9 @@ export default function Home() {
                   Here are some products that we believe match your skin, hair,
                   and body! Have we mentioned that they solve your concerns too?
                 </p>
+                <span className="d-flex mb-3 justify-content-md-end">
+                <Button className="ms-md-auto text-capitalize px-4 py-2" variant="danger">See My Matches!</Button>
+                </span>
               </Col>
               <Col xs="12" md="9">
                 <ProductCards />
